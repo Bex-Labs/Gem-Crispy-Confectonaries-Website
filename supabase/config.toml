@@ -1,0 +1,26 @@
+# Supabase CLI project configuration.
+# Replace project_id with your actual Supabase project ref after
+# running `supabase link --project-ref <your-project-ref>`.
+
+project_id = "your-project-ref"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+extra_search_path = ["public"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+enabled = true
+port = 54323
+
+[functions.submit-enquiry]
+verify_jwt = false
+
+[functions.subscribe-newsletter]
+verify_jwt = false

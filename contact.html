@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us-GEM Crispy Confectonaries</title>
+<meta name="description" content="Get in touch with GEM Crispy Confectonaries for orders, wholesale, or partnership enquiries. Based in Kaduna, Nigeria.">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/logo/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/logo/favicon-180.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo/gem-logo.png" alt="GEM Crispy Confectonaries logo">
+      <span class="visually-hidden">GEM Crispy Confectonaries</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <a href="contact.html" class="btn btn-primary nav-cta">Get in Touch</a>
+    <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+      <i class="bi bi-list" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="container">
+    <nav class="mobile-menu" id="mobile-menu" data-mobile-menu aria-label="Mobile">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="contact.html" class="btn btn-primary btn-block">Get in Touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ PAGE HERO ============ -->
+  <section class="page-hero hero-tinted">
+    <div class="container">
+      <p class="eyebrow">Get In Touch</p>
+      <h1>We'd Love to Hear from You</h1>
+      <p>Whether you're interested in wholesale, have a question about our artisanal snacks, or just want to share some love — our team is here to help.</p>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT INFO + FORM ============ -->
+  <section id="enquiry-form">
+    <div class="container two-col-media" style="align-items:start;">
+
+      <div>
+        <p class="eyebrow">Our Office</p>
+        <h2 class="section-title mb-md">Gemcrispy Foods and Beverages Limited</h2>
+
+        <div class="info-block">
+          <div class="info-row">
+            <span class="info-icon"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></span>
+            <div>
+              <h4>Visit Us</h4>
+              <p style="font-weight:400;">5 Dauda Adugu Street, Bagado, Janruwa,<br>Off Patrick Yakowa Way, Kaduna,<br>Kaduna State, Nigeria.</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon"><i class="bi bi-telephone-fill" aria-hidden="true"></i></span>
+            <div>
+              <h4>Call Us</h4>
+              <p><a href="tel:08065032222">0806 503 2222</a>, <a href="tel:09034888356">0903 488 8356</a></p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon"><i class="bi bi-envelope-fill" aria-hidden="true"></i></span>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="mailto:hello@gemcrispy.com">hello@gemcrispy.com</a></p>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/products/peanut-burger-bag.jpg" alt="GEM Peanut Burger packaging" class="mt-lg" style="border-radius:var(--radius-xl); box-shadow:var(--shadow-1); aspect-ratio:4/3; object-fit:cover;" loading="lazy">
+      </div>
+
+      <div class="form-card">
+        <p class="form-note" data-product-banner hidden style="background:var(--color-primary-container); color:var(--color-primary-dark); padding:10px 14px; border-radius:var(--radius); font-weight:600;">
+          Enquiring about: <strong></strong>
+        </p>
+        <form data-enquiry-form novalidate>
+          <div class="form-grid two-col mb-md">
+            <div class="field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+              <span class="field-error" data-error-for="name"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              <span class="field-error" data-error-for="email"></span>
+            </div>
+          </div>
+
+          <div class="form-grid two-col mb-md">
+            <div class="field">
+              <label for="phone">Phone Number <span style="font-weight:400;">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="0800 000 0000">
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option>General Inquiry</option>
+                <option>Product Enquiry</option>
+                <option>Wholesale / Distribution</option>
+                <option>Partnership</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <input type="hidden" name="product_name">
+
+          <div class="field mb-md">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can we help you today?" required></textarea>
+            <span class="field-error" data-error-for="message"></span>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-block" data-submit-btn>Send Message <i class="bi bi-send" aria-hidden="true"></i></button>
+          <p class="form-note" data-form-note role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MAP ============ -->
+  <section class="bg-tint">
+    <div class="container text-center">
+      <p class="eyebrow">Located in Kaduna, Nigeria</p>
+      <h2 class="section-title mb-md">Find us in the heart of Janruwa</h2>
+      <div id="map" role="application" aria-label="Map showing GEM Crispy Confectonaries location in Kaduna, Nigeria"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="footer-brand">
+          <img src="assets/logo/gem-logo.png" alt="">
+        </a>
+        <p class="footer-desc">Crafting magic and crunch in every small batch. Your destination for artisanal Nigerian snacks, made in Kaduna, Nigeria.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="products.html">Plantain Chips</a></li>
+          <li><a href="products.html">Kuli Kuli</a></li>
+          <li><a href="products.html">Peanut Burger</a></li>
+          <li><a href="about.html">Our Story</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html?product=Wholesale%20Enquiry#enquiry-form">Wholesale Enquiries</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="tel:08065032222">0806 503 2222</a></li>
+          <li><a href="mailto:hello@gemcrispy.com">hello@gemcrispy.com</a></li>
+        </ul>
+        <div class="footer-socials">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> Gemcrispy Foods and Beverages Limited. Crafted with joy and spices.</span>
+      <span>Handmade in Kaduna, Nigeria</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+<script src="js/enquiry-form.js"></script>
+<script>
+  // Map centered on Kaduna, Nigeria — adjust lat/lng to the exact office pin as needed.
+  (function () {
+    var mapEl = document.getElementById("map");
+    if (!mapEl || typeof L === "undefined") return;
+    var map = L.map("map").setView([10.5222, 7.4383], 13);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 19,
+    }).addTo(map);
+    L.marker([10.5222, 7.4383]).addTo(map)
+      .bindPopup("Gemcrispy Foods and Beverages Limited<br>Janruwa, Kaduna, Nigeria")
+      .openPopup();
+  })();
+</script>
+</body>
+</html>
