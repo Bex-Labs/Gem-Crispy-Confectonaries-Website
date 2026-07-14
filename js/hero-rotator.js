@@ -43,6 +43,36 @@
       eyebrow: "Nigerian Classic",
       title: "Peanut Burger",
     },
+    {
+      src: "assets/machines/continuous-band-sealer.jpg",
+      alt: "Continuous band sealer with conveyor belt and control panel",
+      eyebrow: "Production Equipment",
+      title: "Continuous Band Sealer",
+    },
+    {
+      src: "assets/machines/date-coding-machine.jpg",
+      alt: "Manual date coding machine with temperature dial and print ribbon",
+      eyebrow: "Production Equipment",
+      title: "Date Coding Machine",
+    },
+    {
+      src: "assets/machines/vegetable-slicer.jpg",
+      alt: "Electric/manual vegetable slicer shown in two sizes",
+      eyebrow: "Production Equipment",
+      title: "Vegetable Slicer",
+    },
+    {
+      src: "assets/machines/industrial-deep-fryer.jpg",
+      alt: "Industrial twin-tank deep fryer with perforated baskets",
+      eyebrow: "Production Equipment",
+      title: "Industrial Deep Fryer",
+    },
+    {
+      src: "assets/machines/peanut-coating-machine.jpg",
+      alt: "Peanut coating machine with a rotating stainless steel drum",
+      eyebrow: "Production Equipment",
+      title: "Peanut Coating Machine",
+    },
   ];
 
   var currentIndex = 0;
