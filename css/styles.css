@@ -553,6 +553,23 @@ section {
 .stars { color: var(--color-primary); letter-spacing: 2px; margin-bottom: 10px; }
 .testimonial-author { display: flex; align-items: center; gap: 10px; margin-top: var(--space-md); }
 .avatar-dot { width: 34px; height: 34px; border-radius: 50%; background: var(--color-primary-container); }
+.avatar-initials {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--color-primary-container);
+  color: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+.avatar-initials.on-accent {
+  background: rgba(255,255,255,0.25);
+  color: #fff;
+}
 .testimonial-author strong { display: block; font-size: 0.9rem; }
 .testimonial-author span { font-size: 0.8rem; opacity: 0.75; }
 
